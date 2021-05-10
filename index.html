@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Video</title>
+  </head>
+  <body>
+    <header>
+      <video class="video-container" id="video1" autoplay loop>
+        <source src="videoplayback.mp4" type="video/mp4" />
+      </video>
+      <div>
+      	<button class="back" onclick="skip(-0.5)">&#8810;</button>
+      	<button class="skip" onclick="skip(0.5)">&#8811;</button>
+      </div>
+      <button class="switch-btn">
+        <span>
+         play
+        </span>
+        <span>
+         pause
+        </span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <script src="vid.js"></script>
+  </body>
+</html>
